@@ -10,7 +10,7 @@ class View{
             self::returnJSON(json_encode($data));
         }else{
             $data = extract($data); 
-            REQUIRE_ONCE(dirname(__DIR__) . "\\View\\Templates\\" . $template . ".php");
+            REQUIRE_ONCE(dirname(__DIR__) . "/View/Templates/" . $template . ".php");
         }
     }
 

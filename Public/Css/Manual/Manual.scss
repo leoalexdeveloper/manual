@@ -1,12 +1,29 @@
 @import "../_reset";
 @import "../_mixins";
 
+::-webkit-scrollbar {
+    width: 16px;
+    
+}
+ 
+::-webkit-scrollbar-track {
+    
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color:#393939;
+}
+
 body{
     overflow-x: hidden;
 
     & > i{
-        font-size: 2rem;
-        color: #DEDEDE;
+        font-size: 2.5rem;
+        color: rgba(150, 150, 150, 0.5);
         position:fixed;
         right: 5%;
         bottom:5%;
@@ -76,7 +93,7 @@ p{
         animation: arrowAnimation 0.5s linear 0s infinite alternate;
 
         @media only screen and (max-width: 1024px){
-            font-size:3rem;
+            font-size:2.5rem;
         }
 
         @media print{
@@ -266,7 +283,7 @@ p{
     @include size(100vw, 100vh);
     @include absolute(top, 0, left, 0);
     @include flex(row, center, center, nowrap);
-    background-color:rgba(0,0,0,0.95);
+    background-color:rgba(255,255,255,0.95);
     z-index:-2;
     padding:4rem;
     transform:translateX(-100%);
@@ -288,21 +305,26 @@ p{
                         initial,
                         initial,
                         initial,
-                        #DEDEDE,
+                        #393939,
                         3rem,
                         1px
                         );
         padding:4rem;
-        @include border(0.1rem, solid, #DEDEDE);
+        @include border(0.1rem, solid, #393939);
         overflow: auto;
 
         & > i{
             @include absolute(top, 2%, right, 2%);
             float:right;
             font-size:4rem;
-            color:#DEDEDE;
+            color:#393939;
             cursor: pointer;
             margin-bottom:2rem;
+
+            &:hover{
+                color:lighten(#393939, 50%);
+            }
+
             
             @media print{
                 display:none;
@@ -320,10 +342,10 @@ p{
             
 
             & > a{
-                color: #39ffff;
+                color: darken(#39ffff, 80%);
                 word-break: break-all;
                 &:hover{
-                    color: #DEDEDE;
+                    color: lighten(#393939, 10%);
                 }
             }
             
@@ -420,7 +442,7 @@ p{
     background-color: rgba(29, 56, 117, 0.7);
     cursor:pointer;
     overflow:hidden;
-    transition: 0.5s ease-out;
+    transition: 0.7s ease-out;
     backdrop-filter:blur(4px);
     
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');

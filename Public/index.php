@@ -5,7 +5,7 @@ require_once("../App/Routes/RouterController.php");
 
 function autoload($class){
     
-    require_once(str_replace("/", "\\", dirname(__DIR__) ."\\" .  $class . ".php"));
+    require_once(str_replace("\\", "/", dirname(__DIR__) ."\\" .  $class . ".php"));
 }
 spl_autoload_register("autoload");
 

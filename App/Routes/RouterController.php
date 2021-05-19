@@ -41,9 +41,8 @@ class RouterController{
 
     private function getUsableUriPart() : String
     {
-        $uriInit = strpos(substr($this->uri, 1, strlen($this->uri)), "/");
-        $uriUsable = substr($this->uri, 1, $uriInit+1);
-        return str_replace($uriUsable, "", substr($this->uri, 1, strlen($this->uri)));
+        $pos = strpos($this->uri, SITE);
+        return str_replace(substr($this->uri, 0, $pos + strlen(SITE)), "", $this->uri);
     }
 
     private function validateUri() : String
@@ -57,7 +56,7 @@ class RouterController{
         }
 
         if($this->uriUsablePart === "//"){
-            $this->uriUsablePart = "home/home/";
+            $this->uriUsablePart = "manual/manual/";
         }
         foreach($this->routes as $route){
             
@@ -69,7 +68,7 @@ class RouterController{
                 $this->controller = $uriExploded[0];
                 $this->action = $uriExploded[1];
                 
-                if(file_exists(dirname(__DIR__) . "\\Controller\\" . ucfirst($this->controller) . "\\". ucfirst($this->controller) . ".php")){
+                if(file_exists(dirname(__DIR__) . "/Controller/" . ucfirst($this->controller) . "/". ucfirst($this->controller) . ".php")){
                     return "\\App\\Controller\\" . ucfirst($this->controller) . "\\" . ucfirst($this->controller);
                 }
             }

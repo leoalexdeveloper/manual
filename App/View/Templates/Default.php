@@ -7,11 +7,11 @@
     <title>Document</title>
     <base href="/">
     <script src="https://kit.fontawesome.com/028b76dd29.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="<?php echo SITE . "\\Public\\Css\\" . ucfirst($controller) . "\\" .ucfirst($controller) . ".css" ?>">
-    <script src="<?php echo SITE . "\\Public\\Js\\" . ucfirst($controller) . "\\" .ucfirst($controller) . ".js" ?>"></script>
+    <link rel="stylesheet" href="<?php echo SITE . "Public/Css/" . ucfirst($controller) . "/" .ucfirst($controller) . ".css" ?>">
+    <script src="<?php echo SITE . "Public/Js/" . ucfirst($controller) . "/" .ucfirst($controller) . ".js" ?>"></script>
 </head>
 <body>
-    <?php REQUIRE_ONCE(dirname(__DIR__) . "\\Html\\" . ucfirst($controller) . "\\Body.php"); ?>
-    <?php REQUIRE_ONCE(dirname(__DIR__) . "\\Html\\" . ucfirst($controller) . "\\Footer.php"); ?>
+    <?php REQUIRE_ONCE(dirname(__DIR__) . "/Html/" . ucfirst($controller) . "/Body.php"); ?>
+    <?php REQUIRE_ONCE(dirname(__DIR__) . "/Html/" . ucfirst($controller) . "/Footer.php"); ?>
 </body>
 </html>

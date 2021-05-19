@@ -1,5 +1,5 @@
 <section class="c-manual__section">
-    <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Presentation-background.jpg"; ?>" alt="">
+    <img src="<?php echo SITE . "Public/Img/Manual/Presentation-background.jpg"; ?>" alt="">
     <div class="dark-layer"></div>
     <h1>Manual de Gravação</h1>
     <ul class="c-index-list">
@@ -13,20 +13,20 @@
 </section>
 
 <section class="c-manual__section section-flex-fix section">
-    <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Mic-type-background.jpg"; ?>" alt="">
+    <img src="<?php echo SITE . "Public/Img/Manual/Mic-type-background.jpg"; ?>" alt="">
     <div class="dark-layer"></div>
     <h1 class="title-margin-top-fix">Modelos mais comuns de microfone</h1>
     <div class="card-envelope">
     <article class="c-card" data-model="condensador">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Microfone-condenser-2.svg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/Microfone-condenser-2.svg"; ?>" alt="">
         <h3>Microfone Condensador</h3>
     </article>
     <article class="c-card" data-model="condensador">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Microfone-condenser-1.svg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/Microfone-condenser-1.svg"; ?>" alt="">
         <h3>Microfone Condensador</h3>
     </article>
     <article class="c-card" data-model="dinamico">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Microfone-dinamico-1.svg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/Microfone-dinamico-1.svg"; ?>" alt="">
         <h3>Microfone Dinâmico</h3>
     </article>
     </div>
@@ -57,7 +57,7 @@
 </section>
 
 <section class="c-manual__section section-flex-fix section">
-    <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Ruidos-de-gravacao-background.jpg"; ?>" alt="">
+    <img src="<?php echo SITE . "Public/Img/Manual/Ruidos-de-gravacao-background.jpg"; ?>" alt="">
     <div class="dark-layer"></div>
     <h1 class="title-margin-top-fix">Ruídos de gravação</h1>
     <div class="c-detail-envelope">
@@ -143,7 +143,7 @@
 </section>
 
 <section class="c-manual__section section-flex-fix section">
-    <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Ruidos-de-externo-background.jpg"; ?>" alt="">
+    <img src="<?php echo SITE . "Public/Img/Manual/Ruidos-de-externo-background.jpg"; ?>" alt="">
     <div class="dark-layer"></div>
     <h1 class="title-margin-top-fix">Ruídos externos</h1>
     <div class="c-detail-envelope"> 
@@ -211,32 +211,32 @@
     </div>
 </section>
 <section class="c-manual__section section-flex-fix section">
-    <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Mic-type-background.jpg"; ?>" alt="">
+    <img src="<?php echo SITE . "Public/Img/Manual/Mic-type-background.jpg"; ?>" alt="">
     <div class="dark-layer"></div>
     <h1 class="title-margin-top-fix">Exemplos de materiais isolantes</h1>
     <div class="card-envelope">
     <article class="c-card" data-model="Lã de Vidro">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\lã-de-vidro.jpg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/lã-de-vidro.jpg"; ?>" alt="">
         <h3>Lã de Vidro</h3>
     </article>
     <article class="c-card" data-model="Lã de rocha">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\lã-de-rocha.jpg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/lã-de-rocha.jpg"; ?>" alt="">
         <h3>Lã de rocha</h3>
     </article>
     <article class="c-card" data-model="Lã de PET">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\lã-de-pet.jpg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/lã-de-pet.jpg"; ?>" alt="">
         <h3>Lã de PET</h3>
     </article>
     <article class="c-card" data-model="Espumas acústicas">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\espuma-acustica.jpg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/espuma-acustica.jpg"; ?>" alt="">
         <h3>Espumas acústicas</h3>
     </article>
     <article class="c-card" data-model="Borrachas sintéticas">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\borracha-sintetica.jpg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/borracha-sintetica.jpg"; ?>" alt="">
         <h3>Borrachas sintéticas</h3>
     </article>
     <article class="c-card" data-model="Painel Wall">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\pine-wall.jpg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/pine-wall.jpg"; ?>" alt="">
         <h3>Painel Wall</h3>
     </article>
     </div>
@@ -340,24 +340,24 @@
 </section>
 
 <section class="c-manual__section section">
-    <img src="<?php echo SITE . "\\Public\\Img\\Manual\\posicionamento-ao-microfone.jpg"; ?>" alt="">
+    <img src="<?php echo SITE . "Public/Img/Manual/posicionamento-ao-microfone.jpg"; ?>" alt="">
     <div class="dark-layer"></div>
     <h1>Posição ao microfone</h1>
     <div class="card-envelope">
     <article class="c-card" data-model="orientação1">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Posicao-microfone-exemplo-1.svg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/Posicao-microfone-exemplo-1.svg"; ?>" alt="">
         <h3>Cuidado com a respiração: o microfone vai captá-la e amplificá-la</h3>
     </article>
     <article class="c-card" data-model="orientação2">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Posicao-microfone-exemplo-2.svg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/Posicao-microfone-exemplo-2.svg"; ?>" alt="">
         <h3>O Locutor e a Voz</h3>
     </article>
     <article class="c-card" data-model="orientação3">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Posicao-microfone-exemplo-3.svg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/Posicao-microfone-exemplo-3.svg"; ?>" alt="">
         <h3>Não dê apartes próximo ao microfone, a sua fala será captada e amplificada</h3>
     </article>
     <article class="c-card" data-model="orientação4">
-        <img src="<?php echo SITE . "\\Public\\Img\\Manual\\Posicao-microfone-exemplo-4.svg"; ?>" alt="">
+        <img src="<?php echo SITE . "Public/Img/Manual/Posicao-microfone-exemplo-4.svg"; ?>" alt="">
         <h3>Distância correta</h3>
     </article>
     </div>
