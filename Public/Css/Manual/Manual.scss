@@ -50,7 +50,7 @@ p{
         padding-bottom:2rem;
     }
 
-    & > img{
+    & > picture > img{
         @include size(100%, 100%);
         @include object(cover, right);
         @include absolute(top, 0, left, 0);
@@ -224,7 +224,7 @@ p{
             @include size(40%, 20%);
         }
         
-        & > img{
+        & > picture > img{
             @include size(100%, auto);
             @include object(cover, center);
         }
@@ -439,7 +439,7 @@ p{
 .c-detail{
     @include size(100%, 14rem);
     @include border(0.1rem, solid, #DEDEDE);
-    background-color: rgba(29, 56, 117, 0.7);
+    background-color: rgba(29, 56, 117, 0.4);
     cursor:pointer;
     overflow:hidden;
     transition: 0.7s ease-out;
