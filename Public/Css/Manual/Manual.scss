@@ -205,7 +205,7 @@ p{
     @include size(100%, auto);
     @include flex(row, space-around, flex-start, wrap);
     padding:1rem;
-    background:rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
     margin-top: 10%;
 
     .c-card{
@@ -213,7 +213,7 @@ p{
         
         flex-grow: 1;
         margin:1rem;
-        background-color: #393939;
+        background-color: #DEDEDE;
         text-align:center;
         cursor:pointer;
         
@@ -228,6 +228,24 @@ p{
             @include size(100%, auto);
             @include object(cover, center);
         }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+        & > p{
+            @include size(100%, auto);
+            @include font('Quicksand', 
+                        sans-serif,
+                        clamp(0.2rem, calc(0.7rem + 1vw), 2rem),
+                        initial,
+                        initial,
+                        initial,
+                        #393939,
+                        2rem,
+                        1px
+                        );
+            padding:1rem;
+            background-color:#DEDEDE;
+            outline: 0.1rem solid #393939;
+        }
 
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
         & > h3{
@@ -238,7 +256,7 @@ p{
                         initial,
                         initial,
                         initial,
-                        #DEDEDE,
+                        #393939,
                         2rem,
                         1px
                         );
@@ -265,12 +283,6 @@ p{
         transition:0.2s ease-in;
         &:hover{
             transform:scale(1.05);
-            background-color: #DEDEDE;
-
-            & > h3{
-                color:#393939;
-            }
-            
         }
     }
 

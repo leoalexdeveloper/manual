@@ -29,7 +29,8 @@
     <div class="dark-layer"></div>
     <h1 class="title-margin-top-fix">Modelos mais comuns de microfone</h1>
     <div class="card-envelope">
-    <article class="c-card" data-model="condensador">
+    <article class="c-card" data-model="dinamico">
+    <p>Dinâmico</p>
         <picture>
             <source media="(max-width:1024px)" srcset="<?php echo SITE . "Public/Img/Manual/1024/Microfone-condenser-2.jpg"; ?>">
             <source media="(max-width:768px)" srcset="<?php echo SITE . "Public/Img/Manual/768/Microfone-condenser-2.jpg"; ?>">
@@ -37,9 +38,10 @@
             <img src="<?php echo SITE . "Public/Img/Manual/Microfone-condenser-2.jpg"; ?>" alt="">
         </picture>
         
-        <h3>Microfone Condensador</h3>
+        <h3>Shure 55SH</h3>
     </article>
     <article class="c-card" data-model="condensador">
+    <p>Condensador</p>
     <picture>
             <source media="(max-width:1024px)" srcset="<?php echo SITE . "Public/Img/Manual/1024/Microfone-condenser-1.jpg"; ?>">
             <source media="(max-width:768px)" srcset="<?php echo SITE . "Public/Img/Manual/768/Microfone-condenser-1.jpg"; ?>">
@@ -47,9 +49,10 @@
             <img src="<?php echo SITE . "Public/Img/Manual/Microfone-condenser-1.jpg"; ?>" alt="">
         </picture>
         
-        <h3>Microfone Condensador</h3>
+        <h3>Neumann U 87 Ai</h3>
     </article>
     <article class="c-card" data-model="dinamico">
+    <p>Dinâmico</p>
     <picture>
             <source media="(max-width:1024px)" srcset="<?php echo SITE . "Public/Img/Manual/1024/Microfone-dinamico-1.jpg"; ?>">
             <source media="(max-width:768px)" srcset="<?php echo SITE . "Public/Img/Manual/768/Microfone-dinamico-1.jpg"; ?>">
@@ -57,7 +60,7 @@
             <img src="<?php echo SITE . "Public/Img/Manual/Microfone-dinamico-1.jpg"; ?>" alt="">
         </picture>
         
-        <h3>Microfone Dinâmico</h3>
+        <h3>Shure SM58</h3>
     </article>
     </div>
 </section>

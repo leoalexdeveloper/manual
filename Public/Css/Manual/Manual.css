@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
 * {
@@ -317,7 +318,7 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   margin-top: 10%;
 }
 
@@ -328,7 +329,7 @@ p {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 1rem;
-  background-color: #393939;
+  background-color: #DEDEDE;
   text-align: center;
   cursor: pointer;
   -webkit-transition: 0.2s ease-in;
@@ -358,6 +359,22 @@ p {
      object-position: center;
 }
 
+.card-envelope .c-card > p {
+  width: 100%;
+  height: auto;
+  font-family: "Quicksand", sans-serif;
+  font-size: clamp(0.2rem, calc(0.7rem + 1vw), 2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #393939;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  padding: 1rem;
+  background-color: #DEDEDE;
+  outline: 0.1rem solid #393939;
+}
+
 .card-envelope .c-card > h3 {
   width: 100%;
   height: auto;
@@ -366,7 +383,7 @@ p {
   font-style: initial;
   font-variant: initial;
   font-weight: initial;
-  color: #DEDEDE;
+  color: #393939;
   line-height: 2rem;
   letter-spacing: 1px;
   padding: 2rem;
@@ -398,11 +415,6 @@ p {
 .card-envelope .c-card:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  background-color: #DEDEDE;
-}
-
-.card-envelope .c-card:hover > h3 {
-  color: #393939;
 }
 
 @media print {
