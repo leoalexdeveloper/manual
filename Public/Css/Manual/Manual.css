@@ -694,6 +694,7 @@ p {
   .c-detail > h3 {
     padding: 1rem;
     font-size: 2rem;
+    background-color: #1d3875;
   }
 }
 
@@ -701,6 +702,7 @@ p {
   .c-detail > h3 {
     padding: 1rem;
     font-size: 1.5rem;
+    background-color: #1d3875;
   }
 }
 
@@ -708,6 +710,7 @@ p {
   .c-detail > h3 {
     padding: 0.5rem;
     font-size: 1.2rem;
+    background-color: #1d3875;
   }
 }
 

@@ -3,6 +3,8 @@ window.onload = () => {
     const querySelector = (el) => document.querySelector(el);
     const querySelectorAll = (el) => document.querySelectorAll(el);
 
+    
+
     /* control the opacity of the background with width resize================================ */
     window.addEventListener('resize', darkLayerAtResize, true);
 
@@ -46,41 +48,54 @@ window.onload = () => {
         let lastTarget; /* store the last item selected */
         let defaultSize;    /* store the default height of elements */
         let defaultPSize;   /* store p element height */
-
-        querySelectorAll('.c-detail > h3').forEach((value, key) => {
+        let defaultPosition = [];
+        querySelectorAll('.c-detail > h3').forEach(async(value, key) => {
+            await window.scrollTo(0, 0);
             defaultSize = value.getBoundingClientRect().height;
+            defaultPosition.push(value.getBoundingClientRect().top + window.pageYOffset);
             
             value.addEventListener('click', function(event){
                 
                 defaultPSize = this.nextSibling.nextSibling.getBoundingClientRect().height;
                 
-                /* close all open details box */
+                /* 
+                close all open details box 
+                */
                 querySelectorAll('.c-detail').forEach((el) => {
                     if(lastTarget !== value){
                         el.style.setProperty("height", defaultSize + "px");
                        
                     }
                 });
-                /* compare the last element with the current, wether different open the box*/
+                /* 
+                compare the last element with the current, wether different open the box
+                */
                 if(lastTarget !== value.parentElement){
+                    
+           
+                    /* 
+                    compensate the open movement with the scroll to try centralize the information at the screen 
+                    */
+                    
+                     window.scrollTo(0, Math.round(defaultPosition[key]));
+
                     value.parentElement.style.setProperty("height", defaultPSize + defaultSize + "px");
 
-                    /* its imprtant get the size of the detail container to resize them */
+                    /* 
+                    its imprtant get the size of the detail container to resize them 
+                    */
                     lastTarget = value.parentElement;
-
-                    /* compensate the open movement with the scroll to try centralize the information at the screen */
-                    if(event.clientY < window.innerHeight / 2){
-                        window.scrollTo(0, window.scrollY - this.getBoundingClientRect().height);
-                    }else if(event.clientY > window.innerHeight / 2){
-                        window.scrollTo(0, window.scrollY + this.getBoundingClientRect().height );
-                    } 
                 }
-                /* close the last box opened if click again on it*/
+                /* 
+                close the last box opened if click again on it
+                */
                 if(value.parentElement.getBoundingClientRect().height === (defaultPSize + defaultSize)){
                     value.parentElement.style.setProperty("height", defaultSize + "px");
                     lastTarget = '';
                 }
-                /* compensate the size of the detail box at the resize window */
+                /* 
+                compensate the size of the detail box at the resize window 
+                */
                 window.addEventListener('resize', function(event){
 
                     /* get the height of the first p element after h3*/

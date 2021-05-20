@@ -471,16 +471,19 @@ p{
         @media screen and (max-width: 1024px){
             padding: 1rem;
             font-size: 2rem;
+            background-color: rgba(29, 56, 117, 1);
         }
 
         @media screen and (max-width: 768px){
             padding: 1rem;
             font-size: 1.5rem;
+            background-color: rgba(29, 56, 117, 1);
         }
 
         @media screen and (max-width: 540px){
             padding: 0.5rem;
             font-size: 1.2rem;
+            background-color: rgba(29, 56, 117, 1);
             
         }
     }
