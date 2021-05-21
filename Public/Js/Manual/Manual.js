@@ -45,31 +45,36 @@ window.onload = () => {
     /* control the details box movement======================================================= */
     function controlDetail(){
         let lastOpenedHeight;
-        let lastOpenedKey;
+        let lastOpenedKey = 0;
         querySelectorAll('.c-detail-envelope > div').forEach((div, key) => {
             let nodes = div.childNodes;
             lastOpenedHeight = div
             div.style.setProperty('height', '14rem'); 
             
             nodes[1].addEventListener('click', async (event) => {
-                
-                querySelectorAll('.c-detail-envelope > div').forEach((element, key) => {
-                    element.style.setProperty('height', '14rem');
-                });
+                console.log(lastOpenedHeight.childNodes[3]);
+                        console.log(nodes[1].nextSibling.nextSibling);
+               
 
                 if(div.getBoundingClientRect().height === nodes[1].getBoundingClientRect().height){
                     if(key > lastOpenedKey){
-                        console.log("current major");
-                        window.scroll(0, window.pageYOffset + (nodes[1].getBoundingClientRect().height - lastOpenedHeight.getBoundingClientRect().height));
+                        
+                        window.scroll(0, window.pageYOffset + nodes[1].parentElement.getBoundingClientRect().top - lastOpenedHeight.getBoundingClientRect().height + nodes[1].getBoundingClientRect().height);
                     }else{
                         console.log("current minor");
-                        window.scroll(0, (window.pageYOffset - lastOpenedHeight.getBoundingClientRect().height) + (nodes[1].getBoundingClientRect().top + nodes[1].getBoundingClientRect().height));
+                        window.scroll(0, window.pageYOffset + nodes[1].parentElement.getBoundingClientRect().top);
                     }
-                        
-                    nodes[1].parentElement.style.setProperty("height", nodes[1].nextSibling.nextSibling.getBoundingClientRect().height + nodes[1].getBoundingClientRect().height +"px")
-                    
-                    lastOpenedHeight = nodes[1];
+
+                    lastOpenedHeight = nodes[1].parentElement;
                     lastOpenedKey = key;
+                        
+                    
+                    
+                    querySelectorAll('.c-detail-envelope > div').forEach((element, key) => {
+                        element.style.setProperty('height', '14rem');
+                    });
+
+                    nodes[1].parentElement.style.setProperty("height", nodes[1].nextSibling.nextSibling.getBoundingClientRect().height + nodes[1].getBoundingClientRect().height +"px")
                     
                     div.addEventListener('transitioned', ()=>{
                         console.log("yes");
