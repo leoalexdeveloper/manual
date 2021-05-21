@@ -493,7 +493,7 @@
 <section class="c-modal" data-model="orientação1">
     <p>
     <i class="fas fa-window-close"></i>
-    <strong>Cuidado com a respiração: o microfone vai captá-la e amplificá-la</strong>
+    <strong>Cuidado com a respiração</strong>
     Algo natural como arespiração é impossível de ser evitada durante uma locução, mas podemos impedir que ela apareça com volume muito alto,
     é importante a realização de exercícios para melhorar o condicionamento durante a locução, respirar pelo nariz e evitar ler trechos grandes 
     demais levando a uma total falta de ar ao final evita que a respiração acabe ficando ofegante e acabe aparecendo muito na locução.
@@ -529,7 +529,7 @@
 <section class="c-modal" data-model="orientação3">
     <p>
     <i class="fas fa-window-close"></i>
-    <strong>Não dê apartes próximo ao microfone, a sua fala será captada e amplificada</strong>
+    <strong>Não dê apartes próximo ao microfone</strong>
     Muitas vezes o microfone é deixado aberto no ar, por esquecimento ou propositadamente, quando na passagem rápida de 
     um segmento a outro do programa. Neste momento devemos cuidar para que não provoquemos sons detectáveis junto a ele, tais como: 
     <br>

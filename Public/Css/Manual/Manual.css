@@ -49,12 +49,43 @@ body {
 }
 
 body > i {
-  font-size: 2.5rem;
-  color: rgba(150, 150, 150, 0.5);
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.7);
   position: fixed;
   right: 5%;
   bottom: 5%;
   z-index: 998;
+  cursor: pointer;
+  -webkit-animation: arrowBackAnimation 2s ease 0s infinite alternate;
+          animation: arrowBackAnimation 2s ease 0s infinite alternate;
+}
+
+body > i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: rgba(150, 150, 150, 0.9);
+}
+
+@-webkit-keyframes arrowBackAnimation {
+  0% {
+    -webkit-transform: translateY(-0.2rem);
+            transform: translateY(-0.2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0.2rem);
+            transform: translateY(0.2rem);
+  }
+}
+
+@keyframes arrowBackAnimation {
+  0% {
+    -webkit-transform: translateY(-0.2rem);
+            transform: translateY(-0.2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0.2rem);
+            transform: translateY(0.2rem);
+  }
 }
 
 p {

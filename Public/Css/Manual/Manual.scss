@@ -22,12 +22,26 @@ body{
     overflow-x: hidden;
 
     & > i{
-        font-size: 2.5rem;
-        color: rgba(150, 150, 150, 0.5);
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.7);
         position:fixed;
         right: 5%;
         bottom:5%;
         z-index:998;
+        cursor:pointer;
+        animation: arrowBackAnimation 2s ease 0s infinite alternate;
+        &:hover{
+            transform:scale(1.1);color: rgba(150, 150, 150, 0.9);
+        }
+
+        @keyframes arrowBackAnimation{
+            0%{
+                transform:translateY(-0.2rem);
+            }
+            100%{
+                transform:translateY(0.2rem);
+            }
+        }
     }
 }
 
