@@ -43,73 +43,42 @@ window.onload = () => {
     }closeModalControl();
     
     /* control the details box movement======================================================= */
-    function openCloseDetail(){
-
-        let lastTarget; /* store the last item selected */
-        let defaultSize;    /* store the default height of elements */
-        let defaultPSize;   /* store p element height */
-        let defaultPosition = [];
-        querySelectorAll('.c-detail > h3').forEach(async(value, key) => {
-            await window.scrollTo(0, 0);
-            defaultSize = value.getBoundingClientRect().height;
-            defaultPosition.push(value.getBoundingClientRect().top + window.pageYOffset);
+    function controlDetail(){
+        let lastOpenedHeight;
+        let lastOpenedKey;
+        querySelectorAll('.c-detail-envelope > div').forEach((div, key) => {
+            let nodes = div.childNodes;
+            lastOpenedHeight = div
+            div.style.setProperty('height', '14rem'); 
             
-            value.addEventListener('click', function(event){
+            nodes[1].addEventListener('click', async (event) => {
                 
-                defaultPSize = this.nextSibling.nextSibling.getBoundingClientRect().height;
-                
-                /* 
-                close all open details box 
-                */
-                querySelectorAll('.c-detail').forEach((el) => {
-                    if(lastTarget !== value){
-                        el.style.setProperty("height", defaultSize + "px");
-                       
-                    }
+                querySelectorAll('.c-detail-envelope > div').forEach((element, key) => {
+                    element.style.setProperty('height', '14rem');
                 });
-                /* 
-                compare the last element with the current, wether different open the box
-                */
-                if(lastTarget !== value.parentElement){
-                    
-           
-                    /* 
-                    compensate the open movement with the scroll to try centralize the information at the screen 
-                    */
-                    
-                     window.scrollTo(0, Math.round(defaultPosition[key]));
 
-                    value.parentElement.style.setProperty("height", defaultPSize + defaultSize + "px");
-
-                    /* 
-                    its imprtant get the size of the detail container to resize them 
-                    */
-                    lastTarget = value.parentElement;
-                }
-                /* 
-                close the last box opened if click again on it
-                */
-                if(value.parentElement.getBoundingClientRect().height === (defaultPSize + defaultSize)){
-                    value.parentElement.style.setProperty("height", defaultSize + "px");
-                    lastTarget = '';
-                }
-                /* 
-                compensate the size of the detail box at the resize window 
-                */
-                window.addEventListener('resize', function(event){
-
-                    /* get the height of the first p element after h3*/
-                    defaultPSize = value.nextSibling.nextSibling.getBoundingClientRect().height;
-
-                    /* if lastTarget exists, at the width window resize this compensate the change of teh box */
-                    if(lastTarget){
-                        console.log(defaultPSize[3]);
-                        lastTarget.style.setProperty("height", defaultPSize + defaultSize + "px");    
+                if(div.getBoundingClientRect().height === nodes[1].getBoundingClientRect().height){
+                    if(key > lastOpenedKey){
+                        console.log("current major");
+                        window.scroll(0, window.pageYOffset + (nodes[1].getBoundingClientRect().height - lastOpenedHeight.getBoundingClientRect().height));
+                    }else{
+                        console.log("current minor");
+                        window.scroll(0, (window.pageYOffset - lastOpenedHeight.getBoundingClientRect().height) + (nodes[1].getBoundingClientRect().top + nodes[1].getBoundingClientRect().height));
                     }
-                });
+                        
+                    nodes[1].parentElement.style.setProperty("height", nodes[1].nextSibling.nextSibling.getBoundingClientRect().height + nodes[1].getBoundingClientRect().height +"px")
+                    
+                    lastOpenedHeight = nodes[1];
+                    lastOpenedKey = key;
+                    
+                    div.addEventListener('transitioned', ()=>{
+                        console.log("yes");
+                    });
+                }
             });
         });
-    }openCloseDetail();
+        
+    }controlDetail();
     
     /* control the scroll at the index menu */
     function indexMenuControl(){
@@ -136,6 +105,7 @@ window.onload = () => {
 
     /* define back to top arrow function */
     function backToTop(){
+        window.scrollTo(0, 0)
         querySelector('.indexOption[data-arrowBack="0"]').addEventListener('click', (event)=>{
             window.scrollTo(0, 0);
         });

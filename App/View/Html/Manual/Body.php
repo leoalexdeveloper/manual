@@ -32,10 +32,10 @@
     <article class="c-card" data-model="dinamico">
     <p>Dinâmico</p>
         <picture>
-            <source media="(max-width:1024px)" srcset="<?php echo SITE . "Public/Img/Manual/1024/Microfone-condenser-2.jpg"; ?>">
-            <source media="(max-width:768px)" srcset="<?php echo SITE . "Public/Img/Manual/768/Microfone-condenser-2.jpg"; ?>">
-            <source media="(max-width:540px)" srcset="<?php echo SITE . "Public/Img/Manual/540/Microfone-condenser-2.jpg"; ?>">
-            <img src="<?php echo SITE . "Public/Img/Manual/Microfone-condenser-2.jpg"; ?>" alt="">
+            <source media="(max-width:1024px)" srcset="<?php echo SITE . "Public/Img/Manual/1024/Microfone-dinamico-2.jpg"; ?>">
+            <source media="(max-width:768px)" srcset="<?php echo SITE . "Public/Img/Manual/768/Microfone-dinamico-2.jpg"; ?>">
+            <source media="(max-width:540px)" srcset="<?php echo SITE . "Public/Img/Manual/540/Microfone-dinamico-2.jpg"; ?>">
+            <img src="<?php echo SITE . "Public/Img/Manual/Microfone-dinamico-2.jpg"; ?>" alt="">
         </picture>
         
         <h3>Shure 55SH</h3>
@@ -61,6 +61,17 @@
         </picture>
         
         <h3>Shure SM58</h3>
+    </article>
+    <article class="c-card" data-model="condensador">
+    <p>Condenser</p>
+    <picture>
+            <source media="(max-width:1024px)" srcset="<?php echo SITE . "Public/Img/Manual/1024/Microfone-condenser-2.jpg"; ?>">
+            <source media="(max-width:768px)" srcset="<?php echo SITE . "Public/Img/Manual/768/Microfone-condenser-2.jpg"; ?>">
+            <source media="(max-width:540px)" srcset="<?php echo SITE . "Public/Img/Manual/540/Microfone-condenser-2.jpg"; ?>">
+            <img src="<?php echo SITE . "Public/Img/Manual/Microfone-condenser-2.jpg"; ?>" alt="">
+        </picture>
+        
+        <h3>Bm-800</h3>
     </article>
     </div>
 </section>
@@ -90,170 +101,169 @@
 </section>
 
 <section class="c-manual__section section-flex-fix section">
-<picture>
-            <source media="(max-width:1024px)" srcset="<?php echo SITE . "Public/Img/Manual/1024/Ruidos-de-gravacao-background.jpg"; ?>"; ?>">
-            <source media="(max-width:768px)" srcset="<?php echo SITE . "Public/Img/Manual/768/Ruidos-de-gravacao-background.jpg"; ?>"; ?>">
-            <source media="(max-width:540px)" srcset="<?php echo SITE . "Public/Img/Manual/540/Ruidos-de-gravacao-background.jpg"; ?>"; ?>">
-            <img src="<?php echo SITE . "Public/Img/Manual/Ruidos-de-gravacao-background.jpg"; ?>" alt="">
-        </picture>
     
     <div class="dark-layer"></div>
     <h1 class="title-margin-top-fix">Ruídos de gravação</h1>
     <div class="c-detail-envelope">
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-wifi"></i>
-                Interferência eletromagnética e por frequência de rádio
-            </h3>
-            <p>As interferências causadas por frequências de rádio podem ser causadas por 
-                aparelhos utilizados no dia a dia como um celular, um microfone sem fio ou outros 
-                aparelhos bem presentes em nossas vidas. Já a interferência eletromagnética já vem 
-                de aparelhos elétricos como o seu PC, o monitor e outros. Esses tipos de ruídos são 
-                bem difíceis de encontrar, mas existem alguns fatores que ajudam bastante a prevenir.
-                <br><br>
-                <span>
-                    <strong>Fonte:</strong>
-                    <a href="https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/" target="_blank">
-                        https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/
-                    </a>
-                </span>
-            </p>
-        </section>
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-ethernet"></i>
-                Interferência por indução
-            </h3>
-            <p>É importante (e inclusive já citei em um vídeo em meu canal) evitar passar os cabos de áudio e 
-                os cabos de força juntos (e paralelos).
-                Sempre que possível passe os cabos separados e, caso necessite em algum momento cruzá-los, faça 
-                isso em um ângulo de 90° graus. Isso evita que o campo magnético dos dois cabos se alinhe causando um 
-                possível “vazamento” de corrente para o cabo de áudio que, com certeza, geraria o bom, velho e não tão 
-                bem vindo ruído.
-                <br><br>
-                <span>
-                    <strong>Fonte:</strong>
-                    <a href="https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/" target="_blank">
-                        https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/
-                    </a>
-                </span>
-            </p>
-        </section>
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-plug"></i>    
-                Cabeamento
-            </h3>
-            <p>Não poderia deixar de citar esse fator importantíssimo que é a qualidade da blindagem dos cabos.
-                Ao utilizar cabos de baixa qualidade você aumenta razoavelmente possibilidade de adicionar um belo ruído à sua gravação. 
-                Vale a pena investir em cabos (e plugues) de qualidade (os já conhecidos SANTO ANGELO) para evitar ruídos indesejados.
-                Fora isso, também é bom sempre utilizar cabos de áudio balanceados em todas as conexões feitas. Isso também reduzirá bastante 
-                a probabilidade de um ruído presente interferir (nesse caso, até um jogo de futebol não faria ruído).
-                <br><br>
-                <span>
-                    <strong>Fonte:</strong>
-                    <a href="https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/" target="_blank">
-                        https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/
-                    </a>
-                </span>
-            </p>
-        </section>
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-tachometer-alt"></i>    
-                Compressão excessiva
-            </h3>
-            <p>Às vezes, ao dar um ganho excessivo ou trabalhar com alguma peça do seu equipamento com o volume mais alto, 
-                ruídos podem ser gerados também. O ideal é sempre tentar manter um bom equilíbrio. Eu já tratei desse tema 
-                num post anterior, cuja releitura também recomendo.
-                E uma boa dica também é adicionar filtros que cortem frequências não utilizadas em cada canal. Isso ajuda 
-                bastante a diminuir os ruídos. Afinal, não é todo instrumento (ou voz) que vai de 20hz a 20khz (assim como 
-                nossa audição), concordam?
-                <br><br>
-                <span>
-                    <strong>Fonte:</strong>
-                    <a href="https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/" target="_blank">
-                        https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/
-                    </a>
-                </span>
-            </p>
-        </section>
+    <div>
+    <h3>
+        <i class="fas fa-wifi"></i>
+        Interferência eletromagnética e por frequência de rádio
+    </h3>
+    <p>
+        As interferências por frequências de rádio podem ser causadas por 
+        aparelhos utilizados no dia a dia como um celular, um microfone sem fio ou outros 
+        aparelhos bem presentes em nossas vidas. Já a interferência eletromagnética já vem 
+        de aparelhos elétricos como o seu PC, o monitor e outros. Esses tipos de ruídos são 
+        bem difíceis de encontrar, mas existem alguns fatores que ajudam bastante a prevenir, 
+        como manter o dispositivo de gravação distante de computadores, micro-ondas, televisores 
+        ou qualquer aparelho que gere um campo magnético e cause ruído no audio.
+
+        <br><br>
+        <span>
+            <strong>Fonte:</strong>
+            <a href="https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/" target="_blank">
+                https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/
+            </a>
+        </span>
+    </p>
+    </div>
+    <div>
+    <h3>
+        <i class="fas fa-ethernet"></i>
+        Interferência por indução
+    </h3>
+    <p>
+        É importante evitar passar os cabos de áudio e 
+        os cabos de força juntos (e paralelos).
+        Sempre que possível passe os cabos separados e, caso necessite em algum momento cruzá-los, faça 
+        isso em um ângulo de 90° graus. Isso evita que o campo magnético dos dois cabos se alinhe causando um 
+        possível “vazamento” de corrente para o cabo de áudio que, com certeza, geraria o bom, velho e não tão 
+        bem vindo ruído.
+        Se estiver usando dispositivos conectados a tomada no momento da gravação ou que estejam conectados por cabos,
+        é sempre bom se certificar que não existem cabos de eletricidade ou força próximos ao cabo do dispositivo usado.
+
+        <br><br>
+        <span>
+            <strong>Fonte:</strong>
+            <a href="https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/" target="_blank">
+                https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/
+            </a>
+        </span>
+    </p>
+    </div>
+    <div>
+    <h3>
+        <i class="fas fa-plug"></i>    
+        Cabeamento
+    </h3>
+    <p>
+        Um fator importantíssimo é a qualidade da blindagem dos cabos.
+        Ao utilizar cabos de baixa qualidade você aumenta razoavelmente possibilidade de adicionar um belo ruído à sua gravação. 
+        Vale a pena investir em cabos (e plugues) de qualidade para evitar ruídos indesejados.
+        Fora isso, também é bom sempre utilizar cabos de áudio balanceados em todas as conexões feitas. Isso também reduzirá bastante 
+        a probabilidade de um ruído presente interferir (nesse caso, até um jogo de futebol não faria ruído).
+        <br><br>
+        <span>
+            <strong>Fonte:</strong>
+            <a href="https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/" target="_blank">
+                https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/
+            </a>
+        </span> 
+    </p>
+    </div>
+    <div>
+    <h3>
+        <i class="fas fa-tachometer-alt"></i>    
+        Compressão excessiva
+    </h3>
+    <p>
+        Às vezes, ao dar um ganho excessivo ou trabalhar com alguma peça do seu equipamento com o volume mais alto, 
+        ruídos podem ser gerados também. O ideal é sempre tentar manter um bom equilíbrio.
+        O controle do volume no momento da gravação é importante para que os rúidos não fiquem muito evidentes.
+        O ideal é que o volume fique a uma altura entre -12db e -6db. Quando o volume fica muito alto e os decibéis 
+        aumentam acima de 0db acontece o clipping, que é uma deistorção gerada pela impossibilidade de se reproduzir 
+        uma amplitude acima dese npivel de volume, podendo prejudicar os auto-falantes aparelhos reprodutores.
+        <br><br>
+        <span>
+            <strong>Fonte:</strong>
+            <a href="https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/" target="_blank">
+                https://blog.santoangelo.com.br/descobrindo-a-origens-dos-ruidos-estudiohomestudio/
+            </a>
+        </span>
+    </p>
+    </div>
     </div>
 </section>
 
 <section class="c-manual__section section-flex-fix section">
-<picture>
-            <source media="(max-width:1024px)" srcset="<?php echo SITE . "Public/Img/Manual/1024/Ruidos-de-externo-background.jpg"; ?>">
-            <source media="(max-width:768px)" srcset="<?php echo SITE . "Public/Img/Manual/768/Ruidos-de-externo-background.jpg"; ?>">
-            <source media="(max-width:540px)" srcset="<?php echo SITE . "Public/Img/Manual/540/Ruidos-de-externo-background.jpg"; ?>">
-            <img src="<?php echo SITE . "Public/Img/Manual/Ruidos-de-externo-background.jpg"; ?>" alt="">
-        </picture>
     
     <div class="dark-layer"></div>
     <h1 class="title-margin-top-fix">Ruídos externos</h1>
     <div class="c-detail-envelope"> 
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-tractor"></i>    
-                Máquinas
-            </h3>
-            <p>
-                Carros, caminhões, buzina, qualquer máquina que gere ruído audível deve ser desligada enquanto
-                a entrevista está em andamento, ou se não for possível o desligamento, como no caso do trânsito, 
-                deve-se tentar se afastar ao máximo até que não se possa notar o barulho, ou que a voz fique bem mais 
-                alta que o barulho externo.
-            </p>
-        </section>
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-ethernet"></i>    
-                Interferência Eletromagnética
-            </h3>
-            <p>
-                Aparelhos como ventiladores, bombas de água ou qualquer aparelho que emita ou receba ondas, dispositivos móveis
-                antenas de tv ou operadoras de telefonia móvel podem gerar interferência dependendo da proximidade ou da potência 
-                do sinal. É importante que ao chegar no local, seja realizado um teste de gravação, e caso detectada interferência, 
-                o melhor é tentar achar a causa e se afastar até que o ruído não seja mais audível. No caso do teste, é importante que
-                seja escutado com um bom fone e em algum lugar silencioso.
-            </p>
-        </section>
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-temperature-low"></i>    
-                Compressores de ar
-            </h3>
-            <p>
-                Compressores de ar condicionado geram um ruído constante que incorporado a gravação acaba poluindo 
-                varias faixas de frequência, e sendo perceptível até mesmo em volumes mais baixos. É desejável que o ar condicionado do 
-                ambiente a ser usado na entresvista esteja desligado.
-            </p>
-        </section>
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-wind"></i>    
-                Vento
-            </h3>
-            <p>
-                O vento em contato com a capsula do microfone acaba gerando um ruído que atrapalha ou até mesmo impede que o aparelho de captação
-                consiga captatar algo além de um forte ruído. Caso o ambiênte seja muito ventilado, tente encontrar um lugar onde não esteja ventando, 
-                e não se possa ouvir o sopro do vento.
-            </p>
-        </section>
-        <section class="c-detail">
-            <h3>
-            <i class="fas fa-volume-up"></i>    
-                Ressonâcia
-            </h3>
-            <p>
-                Lugares com pouco material isolante ou difusor se torna um ambiênte muito ressonante. Cômodos com paredes lisas, sem tapetes, 
-                com azulejos nas paredes, portas de vidro, acabam sendo lugares onde o som rebate nas paredes e demora muito a perder força até 
-                que deixemos de ouvir a sua propagação. Essas reflexões do som, acabam voltando ao microfone e se juntando ao que se está falando 
-                no momento, gerando uma sensação de que o lugar é muito amplo, e em casos extremos quando as reflexões duram mais que 40 milisegundos
-                já temos a sensaçao de eco. A gravação deve acontecer em um lugar onde tenha o maior número de materias isolantes. Os materiais isolantes 
-                são madeira, como móveis, camas, armários, colchões, esses materiais amenizam bastante as reflexões em um ambiente doméstico por exemplo.
-            </p>
-        </section>
+    <div>
+    <h3>
+        <i class="fas fa-tractor"></i>    
+        Máquinas
+    </h3>
+    <p>
+        Qualquer máquina que gere ruído audível deve ser desligada enquanto
+        a entrevista está em andamento, ou se não for possível o desligamento, como no caso do trânsito, 
+        deve-se tentar se afastar ao máximo até que não se possa notar o barulho, ou que a voz fique bem mais 
+        alta que o barulho externo.
+    </p>
     </div>
+    <div>
+    <h3>
+        <i class="fas fa-ethernet"></i>    
+        Interferência Eletromagnética
+    </h3>
+    <p>
+        Aparelhos como ventiladores, bombas de água ou qualquer aparelho que emita ou receba ondas, dispositivos móveis
+        antenas de tv ou operadoras de telefonia móvel podem gerar interferência dependendo da proximidade ou da potência 
+        do sinal. É importante que ao chegar no local, seja realizado um teste de gravação, e caso detectada interferência, 
+        o melhor é tentar achar a causa e se afastar até que o ruído não seja mais audível. No caso do teste, é importante que
+        seja escutado com um bom fone e em algum lugar silencioso.
+    </p>
+    </div>
+    <div>
+    <h3>
+        <i class="fas fa-temperature-low"></i>    
+        Compressores de ar
+    </h3>
+    <p>
+        Compressores de ar condicionado geram um ruído constante que incorporado a gravação acaba poluindo 
+        varias faixas de frequência, e sendo perceptível até mesmo em volumes mais baixos. É desejável que o ar condicionado do 
+        ambiente a ser usado na entresvista esteja desligado.
+    </p>
+    </div>
+    <div>
+    <h3>
+        <i class="fas fa-wind"></i>    
+        Vento
+    </h3>
+    <p>
+        O vento em contato com a capsula do microfone acaba gerando um ruído que atrapalha ou até mesmo impede que o aparelho de captação
+        consiga captatar algo além de um forte ruído. Caso o ambiênte seja muito ventilado, tente encontrar um lugar onde não esteja ventando, 
+        e não se possa ouvir o sopro do vento.
+    </p>
+    </div>
+    <div>
+    <h3>
+        <i class="fas fa-volume-up"></i>    
+        Ressonâcia
+    </h3>
+    <p>
+        Lugares com pouco material isolante ou difusor (que dissipa as frequências causando drástica redução no número de reflexões) 
+        se torna um ambiênte muito ressonante. Cômodos com paredes lisas, sem tapetes, 
+        com azulejos nas paredes, portas de vidro, acabam sendo lugares onde o som reflete e demora muito a perder força até 
+        que deixemos de ouvir a sua propagação. Essas reflexões do som, acabam voltando ao microfone e se juntando ao que se está falando 
+        no momento, gerando uma sensação de que o lugar é muito amplo, e em casos extremos quando as reflexões duram mais que 40 milisegundos
+        já temos a sensaçao de eco. A gravação deve acontecer em um lugar onde tenha o maior número de materias absorventes. Os materiais isolantes 
+        são madeira, como móveis, camas, armários, colchões, esses materiais amenizam bastante as reflexões em um ambiente doméstico por exemplo.
+    </p>
+    </div>
+    </div-->
 </section>
 <section class="c-manual__section section-flex-fix section">
     <picture>
@@ -484,15 +494,13 @@
     <p>
     <i class="fas fa-window-close"></i>
     <strong>Cuidado com a respiração: o microfone vai captá-la e amplificá-la</strong>
-    Atitude: Uma das coisas que mais demonstram que um locutor é iniciante é a forma pela qual são feitas as tomas 
-    de ar antes de se falar. O microfone amplifica os sibilados da voz e os ruídos provocados pela boca. É 
-    extremamente desagradável ouvirmos alguns tipos de ruídos provocados pela língua, dentro da boca, durante a 
-    locução. Cuide para isto não acontecer.
+    Algo natural como arespiração é impossível de ser evitada durante uma locução, mas podemos impedir que ela apareça com volume muito alto,
+    é importante a realização de exercícios para melhorar o condicionamento durante a locução, respirar pelo nariz e evitar ler trechos grandes 
+    demais levando a uma total falta de ar ao final evita que a respiração acabe ficando ofegante e acabe aparecendo muito na locução.
+    
     <span>
-        <strong>Fonte:</strong>
-            <a href="http://www3.carosouvintes.org.br/agora-e-a-sua-vez-nove-dicas-e-cursos-para-um-locutor-de-radio/#:~:text=Posicione%20o%20microfone%20de%20forma,altura%20compat%C3%ADveis%20ao%20seu%20trabalho." target="_blank">
-                http://www3.carosouvintes.org.br/agora-e-a-sua-vez-nove-dicas-e-cursos-para-um-locutor-de-radio/#:~:text=Posicione%20o%20microfone%20de%20forma,altura%20compat%C3%ADveis%20ao%20seu%20trabalho
-            </a>
+        <strong>Fontes:</strong>
+            <a href="https://artedefalar.tripod.com/id2.html" target="_blank"> https://artedefalar.tripod.com/id2.html</a>
     </span>
     </p>
 </section>
@@ -522,11 +530,15 @@
     <p>
     <i class="fas fa-window-close"></i>
     <strong>Não dê apartes próximo ao microfone, a sua fala será captada e amplificada</strong>
-    Atitude: Muitas vezes o microfone é deixado aberto no ar, por esquecimento ou propositadamente, quando na passagem rápida de 
+    Muitas vezes o microfone é deixado aberto no ar, por esquecimento ou propositadamente, quando na passagem rápida de 
     um segmento a outro do programa. Neste momento devemos cuidar para que não provoquemos sons detectáveis junto a ele, tais como: 
-    Ufa! Que calor! Vá mais pra lá! Etc.
+    <br>
+    - Ufa! Que calor! 
+    <br>
+    - Vá mais pra lá!
+    <br>
     Se estiver lendo não vire as folhas diante do microfone, vire-as fora de seu âmbito de alcance.
-    Atitude: Procure dispor de forma ordenada as folhas dos noticiários ou da programação. Desta forma, quando você entrar no ar, 
+    Procure dispor de forma ordenada as folhas dos noticiários ou da programação. Desta forma, quando você entrar no ar, 
     não correrá o risco de perder-se diante delas.
     <span>
         <strong>Fonte:</strong>
@@ -541,15 +553,16 @@
     <p>
     <i class="fas fa-window-close"></i>
     <strong>Distância correta</strong>
-    Atitude: Conforme o microfone variam-se as distâncias. Existem microfones mais sensíveis, que devem ficar a pelo menos um metro 
-    de distância do locutor, devido sua multidireção de captação sonora. É o chamado microfone multidirecional. O Shure, 
-    Leson e outros de semelhantes características são chamados de unidirecionais, por captarem os sons da voz com qualidade, 
-    somente na posição frontal e, neste caso, devem ficar a uma distância de 10 a 20 cm do locutor. Pois do contrário, em menor 
-    distância provocaríamos os famosos “pufs” no ar, que nada mais são do que a saturação na capacidade de captação do mesmo.
+    Em estúdios pequenos e com pouco isolamento o uso de microfones dinâmicos reduz drasticamente os ruídos mas é essencial que o Locutortenha a preocupação de manter
+    uma distância segura para que o ar deslocado durante a fala não chegue no microfone com muita pressão causando um aumento exagerado de volume e consequentemente
+    o clipping ou deformidades no som. Para microfones dinâmicos é essencial que se fique a distância de tenha pelo menos um palmo da capsula (parte do domo de metal) 
+    do microfone. è importante que o microfone também não fique posicionado diretamente na direção da fonte (boca do locutor ou qualquer outra fonte sonora), para evitar 
+    os puffs, que são causados quando o ar chega com muita força a capsula produzindo um ruído muito alto que impossibilita que o microfone consiga captar algum som durante 
+    uma fração de milisegundos.
     <span>
         <strong>Fonte:</strong>
-            <a href="http://www3.carosouvintes.org.br/agora-e-a-sua-vez-nove-dicas-e-cursos-para-um-locutor-de-radio/#:~:text=Posicione%20o%20microfone%20de%20forma,altura%20compat%C3%ADveis%20ao%20seu%20trabalho." target="_blank">
-                http://www3.carosouvintes.org.br/agora-e-a-sua-vez-nove-dicas-e-cursos-para-um-locutor-de-radio/#:~:text=Posicione%20o%20microfone%20de%20forma,altura%20compat%C3%ADveis%20ao%20seu%20trabalho
+            <a href="https://www.homestudio.com.br/single-post/2013/01/29/microfones-e-capta%C3%A7%C3%A3o-do-som-nos-est%C3%BAdios#:~:text=Os%20microfones%20cardioides%20captam%20melhor,microfone%2C%20maior%20ser%C3%A1%20o%20ganho." target="_blank">
+            https://www.homestudio.com.br/single-post/2013/01/29/microfones-e-capta%C3%A7%C3%A3o-do-som-nos-est%C3%BAdios#:~:text=Os%20microfones%20cardioides%20captam%20melhor,microfone%2C%20maior%20ser%C3%A1%20o%20ganho.
             </a>
     </span>
     </p>

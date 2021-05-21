@@ -209,9 +209,9 @@ p{
     margin-top: 10%;
 
     .c-card{
-        @include size(30rem, 20%);
+        @include size(20rem, 20%);
         
-        flex-grow: 1;
+        flex-shrink: 1;
         margin:1rem;
         background-color: #DEDEDE;
         text-align:center;
@@ -442,115 +442,104 @@ p{
 
 .c-detail-envelope{
     @include size(100%, auto);
-    @include flex(column, center, center, nowrap)
+    @include flex(column, center, center, nowrap);
+    background-color: rgba(29, 56, 117, 1);
     
-    
-    
-}
-
-.c-detail{
-    @include size(100%, 14rem);
-    @include border(0.1rem, solid, #DEDEDE);
-    background-color: rgba(29, 56, 117, 0.4);
-    cursor:pointer;
-    overflow:hidden;
-    transition: 0.7s ease-out;
-    backdrop-filter:blur(4px);
-    
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
-    & > h3{
-        @include size(100%, 14rem);
-        @include flex(column, center, center, nowrap);
-        
-        @include font('Quicksand', 
-                        sans-serif,
-                        clamp(0.5rem, calc(1.5rem + 1vw), 3rem),
-                        initial,
-                        initial,
-                        500,
-                        #DEDEDE,
-                        2rem,
-                        1px
-                        );
-        padding:2rem;
-        text-align: center;
-
-        & > i{
-            font-size:4rem;
-            padding:2rem;
-        }
-
-        @media screen and (max-width: 1024px){
-            padding: 1rem;
-            font-size: 2rem;
-            background-color: rgba(29, 56, 117, 1);
-        }
-
-        @media screen and (max-width: 768px){
-            padding: 1rem;
-            font-size: 1.5rem;
-            background-color: rgba(29, 56, 117, 1);
-        }
-
-        @media screen and (max-width: 540px){
-            padding: 0.5rem;
-            font-size: 1.2rem;
-            background-color: rgba(29, 56, 117, 1);
-            
-        }
-    }
-    
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
-    & > p{
+    & > div{
         @include size(100%, auto);
-        @include font('Quicksand', 
-                        sans-serif,
-                        clamp(0.5rem, calc(1rem + 1vw), 1.5rem),
-                        initial,
-                        initial,
-                        initial,
-                        #393939,
-                        3rem,
-                        1px
-                        );
-        padding:4rem;
-        background-color:#DEDEDE;
-        border-bottom:0.1rem solid #393939;
+        overflow: hidden;
+        cursor:pointer;
+        transition:height 0.5s ease-in;
 
-        & > strong{
-            margin-bottom:2rem;
-        }    
-    
-        & > span{
-            @include relative(bottom, 0, left, auto);
-            font-size:1rem;
-
-            & > a{
-                color: #393939;
-                word-break: break-all;
-                &:hover{
-                    color: #3900ff;
-                }
+        & > h3{
+            @include size(100%, 14rem);
+            @include flex(column, center, center, nowrap);
+            
+            @include font('Quicksand', 
+                            sans-serif,
+                            clamp(0.5rem, calc(1.5rem + 1vw), 3rem),
+                            initial,
+                            initial,
+                            500,
+                            #DEDEDE,
+                            2rem,
+                            1px
+                            );
+            padding:2rem;
+            text-align: center;
+            & > i{
+                font-size:4rem;
+                padding:2rem;
             }
-            
+    
+            @media screen and (max-width: 1024px){
+                padding: 1rem;
+                font-size: 2rem;
+                background-color: rgba(29, 56, 117, 1);
+            }
+    
+            @media screen and (max-width: 768px){
+                padding: 1rem;
+                font-size: 1.5rem;
+                background-color: rgba(29, 56, 117, 1);
+            }
+    
+            @media screen and (max-width: 540px){
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                background-color: rgba(29, 56, 117, 1);
+                
+            }
         }
 
-        @media screen and (max-width: 1024px){
-            font-size:2rem;
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+        & > p{
+            @include size(100%, auto);
+            @include font('Quicksand', 
+                            sans-serif,
+                            clamp(0.5rem, calc(1rem + 1vw), 1.5rem),
+                            initial,
+                            initial,
+                            initial,
+                            #393939,
+                            3rem,
+                            1px
+                            );
+            background-color:#DEDEDE;
+            border-bottom:0.1rem solid #393939;
             padding:4rem;
+            
+            & > strong{
+                margin-bottom:2rem;
+            }    
+        
+            & > span{
+                @include relative(bottom, 0, left, auto);
+                font-size:1rem;
+    
+                & > a{
+                    color: #393939;
+                    word-break: break-all;
+                    &:hover{
+                        color: #3900ff;
+                    }
+                }
+                
+            }
+    
+            @media screen and (max-width: 1024px){
+                font-size:2rem;
+                padding:4rem;
+            }
+            @media screen and (max-width: 768px){
+                font-size:1.5rem;
+                padding:2rem;
+            }
+            @media screen and (max-width: 540px){
+                font-size:1.2rem;
+                padding:1rem;
+            }
         }
-        @media screen and (max-width: 768px){
-            font-size:1.5rem;
-            padding:2rem;
-        }
-        @media screen and (max-width: 540px){
-            font-size:1.2rem;
-            padding:1rem;
-        }
-    }
-
-    @media print{
-        @include size(100%, auto);
     }
 }
 
