@@ -15,7 +15,9 @@ function loading(){
                 
                 document.querySelector('.loading-animation').style.opacity = "0";
                 setTimeout(async() => {
-                    document.querySelector('.c-manual__section').style.opacity="1";
+                    document.querySelectorAll('.c-manual__section').forEach((el) => {
+                        el.style.opacity="1";
+                    });
                     document.querySelector('.loading-animation').remove();
                 }, 100);
             }, 3000);
