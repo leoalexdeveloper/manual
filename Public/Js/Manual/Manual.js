@@ -1,9 +1,40 @@
 window.onload = () => {
+    
     /* simplify the getElement statement====================================================== */
     const querySelector = (el) => document.querySelector(el);
     const querySelectorAll = (el) => document.querySelectorAll(el);
-
     
+        /* define back to top arrow function */
+        function backToTop(){
+            window.scrollTo(0, 0)
+            querySelector('.indexOption[data-arrowBack="0"]').addEventListener('click', (event)=>{
+                window.scrollTo(0, 0);
+            });
+        }backToTop();
+
+        /* control the scroll at the index menu */
+    function indexMenuControl(){
+        querySelectorAll('.indexOption').forEach((value, key) =>{
+            value.addEventListener("click", function(){
+               window.scrollTo(0, querySelectorAll(".section")[value.dataset.arrow || key].offsetTop);
+            });
+        });
+    }indexMenuControl();
+
+    /* hide or show arrow by the scroll position */
+    window.addEventListener('scroll', hideArrows, true);
+    
+    function hideArrows(){
+        if(window.scrollY > 0){
+            querySelector('.indexOption[data-arrow="0"]').classList.add('hideArrow');
+            querySelector('.indexOption[data-arrowBack="0"]').classList.remove('hideArrow');
+
+        }else{
+            querySelector('.indexOption[data-arrow="0"]').classList.remove('hideArrow');
+            querySelector('.indexOption[data-arrowBack="0"]').classList.add('hideArrow');
+        }
+    }hideArrows();
+
 
     /* control the opacity of the background with width resize================================ */
     window.addEventListener('resize', darkLayerAtResize, true);
@@ -13,7 +44,6 @@ window.onload = () => {
             let opacityThreshold = 0.6;
             let opacity = (1.0 - (window.innerWidth * 0.0006)) > opacityThreshold ? (1.0 - (window.innerWidth * 0.0006)) : opacityThreshold;
             value.style.setProperty('opacity', opacity);
-            
         });
     }darkLayerAtResize();
 
@@ -44,77 +74,39 @@ window.onload = () => {
     
     /* control the details box movement======================================================= */
     function controlDetail(){
-        let lastOpenedHeight;
+        let lastOpened;
         let lastOpenedKey = 0;
         querySelectorAll('.c-detail-envelope > div').forEach((div, key) => {
             let nodes = div.childNodes;
-            lastOpenedHeight = div
+            lastOpened = div
             div.style.setProperty('height', '14rem'); 
             
             nodes[1].addEventListener('click', async (event) => {
-                console.log(lastOpenedHeight.childNodes[3]);
-                        console.log(nodes[1].nextSibling.nextSibling);
-               
-
-                if(div.getBoundingClientRect().height === nodes[1].getBoundingClientRect().height){
+                   
+                    window.addEventListener('resize', ()=>{
+                            lastOpened.style.setProperty("height", lastOpened.childNodes[3].getBoundingClientRect().height + lastOpened.childNodes[1].getBoundingClientRect().height + "px");
+                    });
+                    
                     if(key > lastOpenedKey){
                         
-                        window.scroll(0, window.pageYOffset + nodes[1].parentElement.getBoundingClientRect().top - lastOpenedHeight.getBoundingClientRect().height + nodes[1].getBoundingClientRect().height);
+                        window.scroll(0, window.pageYOffset + nodes[1].parentElement.getBoundingClientRect().top - lastOpened.getBoundingClientRect().height + nodes[1].getBoundingClientRect().height);
                     }else{
-                        console.log("current minor");
+                        
                         window.scroll(0, window.pageYOffset + nodes[1].parentElement.getBoundingClientRect().top);
                     }
 
-                    lastOpenedHeight = nodes[1].parentElement;
-                    lastOpenedKey = key;
-                        
-                    
-                    
                     querySelectorAll('.c-detail-envelope > div').forEach((element, key) => {
                         element.style.setProperty('height', '14rem');
                     });
 
                     nodes[1].parentElement.style.setProperty("height", nodes[1].nextSibling.nextSibling.getBoundingClientRect().height + nodes[1].getBoundingClientRect().height +"px")
                     
-                    div.addEventListener('transitioned', ()=>{
-                        console.log("yes");
-                    });
-                }
+                    lastOpened = nodes[1].parentElement;
+                    lastOpenedKey = key;   
             });
         });
         
     }controlDetail();
-    
-    /* control the scroll at the index menu */
-    function indexMenuControl(){
-        querySelectorAll('.indexOption').forEach((value, key) =>{
-            value.addEventListener("click", function(){
-               window.scrollTo(0, querySelectorAll(".section")[value.dataset.arrow || key].offsetTop);
-            });
-        });
-    }indexMenuControl();
-
-    /* hide or show arrow by the scroll position */
-    window.addEventListener('scroll', hideArrows, true);
-    
-    function hideArrows(){
-        if(window.scrollY > 0){
-            querySelector('.indexOption[data-arrow="0"]').classList.add('hideArrow');
-            querySelector('.indexOption[data-arrowBack="0"]').classList.remove('hideArrow');
-
-        }else{
-            querySelector('.indexOption[data-arrow="0"]').classList.remove('hideArrow');
-            querySelector('.indexOption[data-arrowBack="0"]').classList.add('hideArrow');
-        }
-    }hideArrows();
-
-    /* define back to top arrow function */
-    function backToTop(){
-        window.scrollTo(0, 0)
-        querySelector('.indexOption[data-arrowBack="0"]').addEventListener('click', (event)=>{
-            window.scrollTo(0, 0);
-        });
-    }backToTop();
 }
 
 

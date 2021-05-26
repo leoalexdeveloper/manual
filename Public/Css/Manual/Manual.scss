@@ -2,8 +2,16 @@
 @import "../_mixins";
 
 ::-webkit-scrollbar {
-    width: 16px;
-    
+    width: 8px;
+    @media only screen and (max-width: 1024px){
+        width: 1px;
+    }
+    @media only screen and (max-width: 768px){
+        width: 1px;
+    }
+    @media only screen and (max-width: 540px){
+        width: 1px;
+    }
 }
  
 ::-webkit-scrollbar-track {
@@ -19,6 +27,7 @@
 }
 
 body{
+    
     overflow-x: hidden;
 
     & > i{
@@ -30,9 +39,6 @@ body{
         z-index:998;
         cursor:pointer;
         animation: arrowBackAnimation 2s ease 0s infinite alternate;
-        &:hover{
-            transform:scale(1.1);color: rgba(150, 150, 150, 0.9);
-        }
 
         @keyframes arrowBackAnimation{
             0%{
@@ -42,6 +48,10 @@ body{
                 transform:translateY(0.2rem);
             }
         }
+
+        &:hover{
+            transform:scale(1.1);color: rgba(150, 150, 150, 0.9);
+        }
     }
 }
 
@@ -49,17 +59,70 @@ p{
     page-break-inside:avoid;
 }
 
+.loading-animation{
+    @include size(100vw, 100vh);
+    @include flex(column, center, center, nowrap);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999;
+    background-color:#DEDEDE;
+    opacity: 1;
+    transition: opacity 1s ease;
+    
+    @include font('Quicksand', 
+                       sans-serif,
+                       clamp(0.5rem, calc(2rem + 1vw), 4rem),
+                       initial,
+                       initial,
+                       initial,
+                       #DEDEDE,
+                       4rem,
+                       1px
+                       );
+    animation: loadingAnimation 1s linear 0s infinite alternate;
+
+    & > i{
+        font-size: 20rem;
+        animation: loadingAnimation 1s linear 0s infinite alternate;
+
+        @media only screen and (max-width: 1024px){
+            font-size: 15rem;
+        }
+        @media only screen and (max-width: 768px){
+            font-size: 10rem;
+        }
+        @media only screen and (max-width: 540px){
+            font-size: 5rem;
+        }
+
+    }
+
+    @keyframes loadingAnimation{
+        from{
+            color:rgba(100,150,255,1);
+        }
+        to{
+            color:rgba(255,100,0,1);
+        }
+    }
+}
+
 .c-manual__section{
     @include size(100%, auto);
     @include relative(top, 0, left, 0);
-    
     @include flex(column, center, center);
+    opacity:0;
+    transition: 1s ease;
+    @media only screen and (max-width:767px){
+        @include flex(column, flex-start, center);
+    }
 
-    &:nth-child(1){
-        @include size(100%, 100%);
+    &:nth-child(2){
+        @include size(100%, 100vh);
         padding-bottom:2rem;
     }
-    &:nth-child(2){
+    &:nth-child(3){
         @include size(100%, auto);
         padding-bottom:2rem;
     }
@@ -81,9 +144,10 @@ p{
                        initial,
                        initial,
                        #393939,
-                       3rem,
+                       4rem,
                        1px
                        );
+        word-wrap: break-word;
         @include relative(top, 0rem, left, 0rem);
         padding: 2rem;
         text-align: center;
@@ -236,6 +300,14 @@ p{
         }
         @media screen and (max-width: 1024px){
             @include size(40%, 20%);
+        }
+
+        @media screen and (max-width: 768px){
+            @include size(90%, 20%);
+        }
+
+        @media screen and (max-width: 540px){
+            @include size(100%, 20%);
         }
         
         & > picture > img{
@@ -464,7 +536,7 @@ p{
         overflow: hidden;
         cursor:pointer;
         transition:height 0.5s ease-in;
-
+        
         & > h3{
             @include size(100%, 14rem);
             @include flex(column, center, center, nowrap);

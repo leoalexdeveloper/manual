@@ -30,7 +30,25 @@ li {
 }
 
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 8px;
+}
+
+@media only screen and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -60,12 +78,6 @@ body > i {
           animation: arrowBackAnimation 2s ease 0s infinite alternate;
 }
 
-body > i:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  color: rgba(150, 150, 150, 0.9);
-}
-
 @-webkit-keyframes arrowBackAnimation {
   0% {
     -webkit-transform: translateY(-0.2rem);
@@ -88,8 +100,94 @@ body > i:hover {
   }
 }
 
+body > i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: rgba(150, 150, 150, 0.9);
+}
+
 p {
   page-break-inside: avoid;
+}
+
+.loading-animation {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #DEDEDE;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  font-family: "Quicksand", sans-serif;
+  font-size: clamp(0.5rem, calc(2rem + 1vw), 4rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: 4rem;
+  letter-spacing: 1px;
+  -webkit-animation: loadingAnimation 1s linear 0s infinite alternate;
+          animation: loadingAnimation 1s linear 0s infinite alternate;
+}
+
+.loading-animation > i {
+  font-size: 20rem;
+  -webkit-animation: loadingAnimation 1s linear 0s infinite alternate;
+          animation: loadingAnimation 1s linear 0s infinite alternate;
+}
+
+@media only screen and (max-width: 1024px) {
+  .loading-animation > i {
+    font-size: 15rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .loading-animation > i {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .loading-animation > i {
+    font-size: 5rem;
+  }
+}
+
+@-webkit-keyframes loadingAnimation {
+  from {
+    color: #6496ff;
+  }
+  to {
+    color: #ff6400;
+  }
+}
+
+@keyframes loadingAnimation {
+  from {
+    color: #6496ff;
+  }
+  to {
+    color: #ff6400;
+  }
 }
 
 .c-manual__section {
@@ -113,15 +211,38 @@ p {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
-.c-manual__section:nth-child(1) {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 2rem;
+@media only screen and (max-width: 767px) {
+  .c-manual__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .c-manual__section:nth-child(2) {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 2rem;
+}
+
+.c-manual__section:nth-child(3) {
   width: 100%;
   height: auto;
   padding-bottom: 2rem;
@@ -149,8 +270,9 @@ p {
   font-variant: initial;
   font-weight: initial;
   color: #393939;
-  line-height: 3rem;
+  line-height: 4rem;
   letter-spacing: 1px;
+  word-wrap: break-word;
   position: relative;
   top: 0rem;
   left: 0rem;
@@ -375,6 +497,20 @@ p {
 @media screen and (max-width: 1024px) {
   .card-envelope .c-card {
     width: 40%;
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-envelope .c-card {
+    width: 90%;
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .card-envelope .c-card {
+    width: 100%;
     height: 20%;
   }
 }

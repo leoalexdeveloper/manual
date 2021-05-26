@@ -9,11 +9,11 @@
     <div class="dark-layer"></div>
     <h1>Manual de Gravação</h1>
     <ul class="c-index-list">
-            <li class="indexOption"><a>Modelos mais comuns de microfone.</a></li>
-            <li class="indexOption"><a>Ruídos de gravação.</a></li>
+            <li class="indexOption"><a>Modelos mais comuns de microfone</a></li>
+            <li class="indexOption"><a>Ruídos de gravação</a></li>
             <li class="indexOption"><a>Ruídos externos</a></li>
-            <li class="indexOption"><a>Exemplos e materiais isolantes.</a></li>
-            <li class="indexOption"><a>Posicionamento ao microfone.</a></li>
+            <li class="indexOption"><a>Exemplos e materiais isolantes</a></li>
+            <li class="indexOption"><a>Posicionamento ao microfone</a></li>
     </ul>
     <i class="fas fa-arrow-circle-down indexOption" data-arrow="0"></i>
 </section>
@@ -251,7 +251,7 @@
     <div>
     <h3>
         <i class="fas fa-volume-up"></i>    
-        Ressonâcia
+        Ressonância
     </h3>
     <p>
         Lugares com pouco material isolante ou difusor (que dissipa as frequências causando drástica redução no número de reflexões) 
@@ -445,7 +445,7 @@
         </picture>
     
     <div class="dark-layer"></div>
-    <h1>Posição ao microfone</h1>
+    <h1>Posicionamento ao microfone</h1>
     <div class="card-envelope">
     <article class="c-card" data-model="orientação1">
     <picture>
@@ -455,7 +455,7 @@
             <img src="<?php echo SITE . "Public/Img/Manual/Posicao-microfone-exemplo-1.jpg"; ?>" alt="">
         </picture>
         
-        <h3>Cuidado com a respiração: o microfone vai captá-la e amplificá-la</h3>
+        <h3>Cuidado com a respiração</h3>
     </article>
     <article class="c-card" data-model="orientação2">
     <picture>
@@ -475,7 +475,7 @@
             <img src="<?php echo SITE . "Public/Img/Manual/Posicao-microfone-exemplo-3.jpg"; ?>" alt="">
         </picture>
         
-        <h3>Não dê apartes próximo ao microfone, a sua fala será captada e amplificada</h3>
+        <h3>Não dê apartes próximo ao microfone</h3>
     </article>
     <article class="c-card" data-model="orientação4">
     <picture>
@@ -553,7 +553,7 @@
     <p>
     <i class="fas fa-window-close"></i>
     <strong>Distância correta</strong>
-    Em estúdios pequenos e com pouco isolamento o uso de microfones dinâmicos reduz drasticamente os ruídos mas é essencial que o Locutortenha a preocupação de manter
+    Em estúdios pequenos e com pouco isolamento o uso de microfones dinâmicos reduz drasticamente os ruídos mas é essencial que o Locutor tenha a preocupação de manter
     uma distância segura para que o ar deslocado durante a fala não chegue no microfone com muita pressão causando um aumento exagerado de volume e consequentemente
     o clipping ou deformidades no som. Para microfones dinâmicos é essencial que se fique a distância de tenha pelo menos um palmo da capsula (parte do domo de metal) 
     do microfone. è importante que o microfone também não fique posicionado diretamente na direção da fonte (boca do locutor ou qualquer outra fonte sonora), para evitar 
