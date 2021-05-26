@@ -107,6 +107,10 @@ window.onload = () => {
         });
         
     }controlDetail();
+
+    window.addEventListener("click", function(event){
+        console.log(event.target);
+    })
 }
 
 

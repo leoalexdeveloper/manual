@@ -28,7 +28,7 @@
 
 body{
     
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 
     & > i{
         font-size: 3rem;
